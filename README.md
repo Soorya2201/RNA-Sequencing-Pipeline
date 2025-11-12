@@ -6,7 +6,7 @@
 
 ## Overview
 
-**MIXCER-Trust$** is a fully automated pipeline that takes raw **RNA sequencing runs** (single or multiple “runs of runs”) and turns them into **clean, matched outputs** in a single command.
+**MIXCER-Trust4** is a fully automated pipeline that takes raw **RNA sequencing runs** (single or multiple “runs of runs”) and turns them into **clean, matched outputs** in a single command.
 
 The pipeline:
 
