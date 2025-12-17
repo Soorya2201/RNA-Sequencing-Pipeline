@@ -1,0 +1,2 @@
+cloneId	readCount	readFraction	targetSequences	targetQualities	allVHitsWithScore	allDHitsWithScore	allJHitsWithScore	allCHitsWithScore	allVAlignments	allDAlignments	allJAlignments	allCAlignments	nSeqCDR3	minQualCDR3	aaSeqCDR3	refPoints
+1154	1.0	1.0	TGTGCTGCGTGGACGTTAAGAAACTCTTT	FFFFFFFFIBFFFFFIIIIIIIIIIIIII	TRGV10*00(85)		TRGJ1*00(205)	TRGC1*00(185),TRGC2*00(185)	362|374|400|0|12||60.0		29|42|70|16|29||65.0	;	TGTGCTGCGTGGACGTTAAGAAACTCTTT	33	CAAWT_KKLF	:::::::::0:-6:12:::::16:-9:29:::
