@@ -1,6 +1,6 @@
 # MIXCER-Trust$ RNA-Seq Matching Pipeline
 
-> End-to-end, one-command pipeline for RNA-seq–based matching and instant reporting.
+> End-to-end, single-notebook pipeline for RNA-seq–based matching and instant reporting.
 
 ---
 
@@ -80,8 +80,8 @@ The pipeline is structured as:
 
 ## Key Features
 
-- **One-Command Execution**  
-  From raw reads to final matches in a single pipeline call.
+- **Single-Notebook Workflow**  
+  From raw reads to final matches by running one notebook top to bottom — no juggling separate scripts per stage.
 
 - **Run-of-Runs Aware**  
   Designed for situations where you have **multiple runs per sample** and need them merged intelligently.
@@ -100,18 +100,32 @@ The pipeline is structured as:
 
 ---
 
-## Installation
+## Repository Structure
 
-> ⚠️ Replace the commands below with the actual steps for this repo.
+This project is implemented as a set of Jupyter notebooks rather than a single CLI script:
+
+- `TCR_seq_Pipeline.ipynb` — main pipeline: QC, alignment, quantification, and MIXCER/Trust4 matching
+- `TCR_Sequence_Extracror.ipynb` — TCR sequence extraction from raw reads
+- `Biotech_data_Reserach (1).ipynb` — exploratory research and analysis
+- `Fast_Mixcer/`, `Mixer-Output_Refined/`, `Double Run/`, `Outputs/`, `Trust4_outputs refined/` — output directories from prior pipeline runs
+
+## Running the Pipeline
 
 ```bash
-# Clone the repository
-git clone https://github.com/<your-username>/MIXCER-Trust-pipeline.git
-cd MIXCER-Trust-pipeline
+git clone https://github.com/Soorya2201/RNA-Sequencing-Pipeline.git
+cd RNA-Sequencing-Pipeline
 
-# (Optional) Create and activate a virtual environment
 python -m venv .venv
 source .venv/bin/activate
 
-# Install Python dependencies
-pip install -r requirements.txt
+pip install jupyter pandas numpy biopython
+jupyter notebook
+```
+
+Open `TCR_seq_Pipeline.ipynb` and run the cells top to bottom against your own FASTQ input. Adjust file paths and config values at the top of the notebook for your dataset.
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE) for details.
