@@ -1,4 +1,4 @@
-# MIXCER-Trust$ RNA-Seq Matching Pipeline
+# MIXCER-TRUST4 RNA-Seq Matching Pipeline
 
 > End-to-end, single-notebook pipeline for RNA-seq–based matching and instant reporting.
 
@@ -6,13 +6,13 @@
 
 ## Overview
 
-**MIXCER-Trust4** is a fully automated pipeline that takes raw **RNA sequencing runs** (single or multiple “runs of runs”) and turns them into **clean, matched outputs** in a single command.
+**MIXCER-TRUST4** is a fully automated pipeline that takes raw **RNA sequencing runs** (single or multiple “runs of runs”) and turns them into **clean, matched outputs** in a single command.
 
 The pipeline:
 
 - Ingests raw RNA-seq files (e.g., FASTQ from multiple runs / batches)  
 - Performs quality control, alignment, and quantification  
-- Feeds processed signals into the **MIXCER** and **Trust$** modules  
+- Feeds processed signals into the **MIXCER** and **TRUST4** modules  
 - Automatically **matches** samples / signatures according to your rules  
 - Produces **instant, consolidated reports** ready for downstream analysis  
 
@@ -32,16 +32,16 @@ This entire workflow was **designed and implemented by me** to take a fragmented
 
 In short, MIXCER makes sure your data is **consistent, de-noised, and comparable**, even when it comes from different runs or sequencing batches.
 
-### Trust$
+### TRUST4
 
-`Trust$` is the **matching and scoring engine**:
+`TRUST4` is the **matching and scoring engine**:
 
 - Takes MIXCER-processed profiles as input  
 - Computes **similarity scores, confidence metrics, and rankings**  
 - Applies customizable rules to **match samples, conditions, or reference signatures**  
 - Outputs interpretable **match tables and summary reports**  
 
-Trust$ turns raw expression profiles into **decisions**: “which sample matches what?” and “how confident are we?”
+TRUST4 turns raw expression profiles into **decisions**: “which sample matches what?” and “how confident are we?”
 
 ---
 
@@ -66,7 +66,7 @@ The pipeline is structured as:
    - Aggregates multiple runs into unified per-sample profiles  
    - Optionally performs deconvolution / mixture modelling (depending on config)
 
-5. **Trust$ Matching Engine**
+5. **TRUST4 Matching Engine**
    - Computes similarity/matching scores  
    - Ranks candidate matches  
    - Flags high-confidence / ambiguous cases
@@ -87,7 +87,7 @@ The pipeline is structured as:
   Designed for situations where you have **multiple runs per sample** and need them merged intelligently.
 
 - **Automated Matching**  
-  No more manual spreadsheets or ad-hoc scripts. Trust$ handles matching and scoring end-to-end.
+  No more manual spreadsheets or ad-hoc scripts. TRUST4 handles matching and scoring end-to-end.
 
 - **Reproducible & Config-Driven**  
   Every parameter is controlled via a config file, making the pipeline portable and repeatable.
